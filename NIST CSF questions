@@ -1,34 +1,75 @@
-# NIST CSF — Audit Questions by Category
+# NIST CSF 2.0 — Audit Questions by Category
 
-> To use these questions during interviews, workshops, or self-assessments to evaluate your organization's cybersecurity posture.
+> Based on the GRC Mastery NIST Cybersecurity Assessment, fully mapped to the NIST Cybersecurity Framework 2.0 structure.
+---
+
+## 🏛️ GOVERN
+
+> *New in CSF 2.0. Covers organisational context, risk strategy, roles, policy, oversight, and supply chain risk management.*
+
+### Organisational Context
+
+- Does the organisation have a clear business strategy and mission statement, and does it inform how cybersecurity risk decisions are made?
+- Is this organisation considered critical infrastructure (e.g., intelligence agencies, national communications, transportation)? If yes, is this documented in the information security policy and communicated to senior stakeholders?
+- Are the organisation's legal and regulatory responsibilities from an information security standpoint well documented, including privacy laws and other cybersecurity regulations?
+- **[+]** Have you identified all internal and external stakeholders who have expectations around cybersecurity (e.g., customers, regulators, partners, employees)?
+- **[+]** Are the critical services and capabilities your stakeholders depend on clearly defined and documented?
+
+### Risk Management Strategy
+
+- Does the organisation have mature, established processes and procedures to manage cybersecurity risks?
+- **[+]** Is there a documented risk appetite and risk tolerance statement, and is it communicated to relevant staff and leadership?
+- **[+]** How is cybersecurity risk integrated into your broader enterprise risk management (ERM) process?
+- **[+]** Is there a standardised method for calculating, documenting, categorising, and prioritising cybersecurity risks?
+- **[+]** Are there clear escalation paths and communication channels for reporting cybersecurity risk across the organisation?
+
+### Roles, Responsibilities & Authorities
+
+- Are cybersecurity roles and responsibilities defined? Is there a clear information security policy outlining roles and responsibilities (including third party suppliers)?
+- Have information security roles and responsibilities been documented and communicated with internal and external stakeholders?
+- Does the board of directors have oversight of information security issues (governance)?
+- **[+]** Is executive leadership visibly accountable for cybersecurity risk management?
+- **[+]** Is cybersecurity budget and resource allocation reviewed regularly against actual risk exposure?
+- **[+]** Are cybersecurity responsibilities included in job descriptions, onboarding, and performance reviews?
+
+### Policy
+
+- Does the organisation have an information security policy?
+- Do you have a cybersecurity policy that is periodically reviewed, updated, and enforced?
+- **[+]** Is the cybersecurity policy communicated to all relevant staff, contractors, and third parties?
+- **[+]** Is there an enforcement mechanism or consequence for policy non-compliance?
+
+### Oversight
+
+- **[+]** How does leadership review the effectiveness of cybersecurity risk management outcomes?
+- **[+]** Are cybersecurity metrics or KPIs regularly reported to senior leadership or the board?
+- **[+]** Is there a process to adjust cybersecurity strategy based on changes in risk, technology, or the business environment?
+
+### Supply Chain Risk Management
+
+- Does the organisation have clear documentation outlining their role within their own supply chain when it comes to cybersecurity? This includes a clear mapping of third party suppliers classified based on criticality and sensitivity.
+- Do your contracts with third-party suppliers include clauses to ensure information security standards are met? Do you conduct cybersecurity assessments on third party suppliers before onboarding them?
+- Do third-party service providers notify you in case of any data breaches (this should be part of the contract)?
+- **[+]** Do you maintain a prioritised inventory of critical suppliers and service providers based on their potential risk impact?
+- **[+]** Do you perform due diligence (e.g., security questionnaires, SOC 2 reports, penetration test results) before onboarding new suppliers?
+- **[+]** Are suppliers included in your incident response and recovery planning?
+- **[+]** Do you have an offboarding process for suppliers that addresses data return, deletion, and access revocation?
 
 ---
 
-##🔍 IDENTIFY
+## 🔍 IDENTIFY
 
 ### Asset Management
 
-- Do you have an up to date CMDB or asset inventory of all physical (hardware) devices? How do you perform periodic reviews on the CMDB to ensure that it's accurate and up to date?
+- Do you have an up to date CMDB or asset inventory of all physical (hardware) devices? How do you perform periodic reviews to ensure it is accurate and up to date?
 - Do you have an up to date CMDB or asset inventory of all software assets such as critical applications? How do you perform periodic reviews to ensure accuracy?
 - Do you have clear, up to date network diagrams — including the cloud environment?
 - Does your CMDB include Software-as-a-Service (SaaS) instances catalogued and classified by sensitivity and criticality? Do you have an up to date inventory of all third party suppliers?
 - Are assets in the CMDB classified based on sensitivity and criticality?
-- Are cybersecurity roles and responsibilities defined? Is there a clear information security policy outlining roles and responsibilities for cybersecurity (including third party suppliers)?
-
-### Business Environment
-
-- Does the organisation have clear documentation outlining their role within their own supply chain when it comes to cybersecurity? This includes a clear mapping of third party suppliers classified based on criticality and sensitivity.
-- Is this organisation considered critical infrastructure (e.g., intelligence agencies, national communications, transportation)? If yes, is this documented in the information security policy and communicated to senior stakeholders?
-- Does the organisation have a clear business strategy and mission statement?
 - Does the organisation have key critical services and applications inventoried and classified? Are business continuity plans and disaster recovery plans in place for those services?
-- Do the organisation's BCP and DR plans (including business impact analysis) support resilience of critical services? Is appropriate due diligence (BCPs, SLAs, SOC reports) in place and reviewed to ensure resilience requirements can be met by critical third-party services?
-
-### Governance
-
-- Does the organisation have an information security policy?
-- Have information security roles and responsibilities been documented and communicated with internal and external stakeholders (including third party suppliers)?
-- Are the organisation's legal and regulatory responsibilities from an information security standpoint well documented, including privacy laws and other cybersecurity regulations?
-- Does the organisation have mature, established processes and procedures to manage cybersecurity risks? Does the board of directors have oversight of information security issues?
+- **[+]** Do you have a formal data inventory that identifies where sensitive or regulated data is stored, processed, and transmitted?
+- **[+]** Is there a formal lifecycle management process for hardware, software, and data — covering acquisition, use, and disposal?
+- **[+]** Are cloud-hosted assets and services included in your asset inventory alongside on-premises systems?
 
 ### Risk Assessment
 
@@ -37,73 +78,81 @@
 - Have cybersecurity threat assessments been conducted? Have threat actors been identified, assessed, and documented?
 - Do cybersecurity risk assessments include business impact and likelihood as a critical step to determine the level of risk?
 - Does the risk assessment process identify reasonably foreseeable internal and external threats and vulnerabilities, the likelihood and potential damage of those threats, and the sufficiency of controls to mitigate the associated risk?
+- **[+]** Are risk assessments performed before major changes such as new systems, mergers, or new vendor relationships?
+- **[+]** Are risks introduced by third parties and the supply chain factored into your risk assessments?
+- **[+]** How are risk assessment results used to drive prioritised remediation and resource allocation?
+
+### Improvement
+
+- **[+]** Is there a formal process to identify and act on lessons learned from past incidents or near-misses?
+- **[+]** Are improvement activities tracked to completion with assigned owners and target dates?
+- **[+]** How are cybersecurity improvement priorities communicated to leadership and relevant teams?
 
 ---
 
 ## 🛡️ PROTECT
 
-### Access Control
+### Identity Management, Authentication & Access Control
 
 - Describe all aspects of identity and access management, including: How are usernames, passwords, and identities managed? What is your password policy? Do you use multi-factor authentication? Do you have a process to off-board users who leave the organisation? Do you conduct regular user access reviews?
 - Describe your physical security process: Do you use CCTV? Do you log who accesses restricted rooms (e.g., key card swipe)? Do you make use of biometrics?
 - Do you use a VPN for remote access? Is two-factor authentication required for VPN connections? How do contractors and third-party providers access your environment?
 - Are the principles of least privilege and separation of duties followed across the organisation? Do you conduct regular reviews to validate these principles are consistently applied?
 - Does the network team segment the network, and if so, how?
+- **[+]** Are privileged accounts (admin, root, service accounts) inventoried and tightly controlled, with usage logged and reviewed?
+- **[+]** Is single sign-on (SSO) or a centralised identity provider used to manage authentication across systems?
+- **[+]** Are service accounts and non-human identities managed and reviewed with the same rigour as user accounts?
 
 ### Awareness & Training
 
 - Do you conduct regular security awareness training? Is training mandatory for all employees who join the organisation? Is it enforced for contractors?
 - Do you have a process to manage privileged users and privileged accounts? Do you use a tool to manage privileged access, and is it operational?
-- Do your contracts with third-party suppliers include clauses to ensure information security standards are met? Do you conduct cybersecurity assessments on third party suppliers before onboarding them?
 - Do senior executives and board members undergo mandatory security awareness training? Do they understand their information security roles and responsibilities?
 - Have cybersecurity roles and responsibilities been defined and communicated to staff (including physical security staff), such as through policy acceptance or awareness training?
+- **[+]** Are phishing simulations or social engineering tests conducted regularly, and are results used to improve training?
+- **[+]** Is security awareness training updated to reflect current and emerging threats (e.g., AI-based phishing, ransomware)?
+- **[+]** Is role-specific cybersecurity training provided to staff with elevated access or security responsibilities?
 
 ### Data Security
 
 - Is data at rest (in hard drives, SharePoint, etc.) encrypted by default? Has the organisation conducted a data discovery activity to discover, classify, and label data? Does the organisation have effective DLP capability to prevent loss of data at rest?
 - Is data in transit encrypted by default? Does the organisation have effective DLP capability in transit? Can employees copy data onto external USB flash drives?
 - Do you have a process to offboard assets? Do you follow a process for data disposal?
-- Are your critical systems highly available? Do you have business continuity plans in place? Do you have protection against Denial of Service attacks?
 - Describe your Data Loss Prevention (DLP) program.
 - Does the organisation conduct software development activities? If yes, do they have separate development, testing, and production environments?
+- **[+]** Are data retention and disposal policies defined, enforced, and applied consistently across cloud and on-premises systems?
+- **[+]** Are backups performed regularly, tested for restoration, and stored securely (including offsite or offline/air-gapped copies)?
+- **[+]** Is access to backups restricted to prevent ransomware or insider threats from encrypting or deleting backup data?
 
-### Information Protection Processes & Procedures
+### Platform Security
 
 - Do you use a Secure Operating Environment (SOE) image for your operating system baseline configuration?
-- Does the organisation conduct software development activities? If yes, do they follow a software development life cycle (SDLC) process?
 - Does the organisation follow a well-documented change management process that includes documented approvals?
-- Do you conduct regular backups? Are backups stored securely (e.g., offsite or air-gapped)?
-- Do you have a cybersecurity policy that is periodically reviewed, updated, and enforced?
-- Do you have response plans that address how to respond in cybersecurity incidents?
-- Do you have processes in place to test your recovery plans? Are they effective?
+- Is the maintenance of systems performed and logged in a manner that prevents unauthorised access? Is remote maintenance of organisational assets carried out securely?
+- Does the organisation conduct software development activities? If yes, do they follow a software development life cycle (SDLC) process?
+- **[+]** Are system hardening standards (e.g., CIS Benchmarks) applied to all platforms — endpoints, servers, and cloud workloads?
+- **[+]** Is there a formal patch management process with defined SLAs for critical, high, and medium vulnerabilities?
+- **[+]** Are web, email, and endpoint security controls (e.g., web filtering, anti-spam, EDR) deployed and monitored across the environment?
+- **[+]** Are configuration baselines monitored for drift, and are alerts generated when deviations occur?
 
-### Maintenance
+### Technology Infrastructure Resilience
 
-- Is the maintenance of systems and industrial control systems performed and logged in a manner that prevents unauthorised access?
-- Is remote maintenance of organisational assets carried out in a way that prevents unauthorised access?
-
-### Protective Technology
-
-- Audit logs/records are determined, documented, implemented and reviewed in accordance with policy.
-- Removable media is protected and its use restricted according to policy.
-- Access to systems and assets is protected, incorporating the principle of least functionality.
-- Communications and control networks are protected.
+- Are your critical systems highly available? Do you have business continuity plans in place? Do you have protection against Denial of Service attacks?
+- Do the organisation's BCP and DR plans (including business impact analysis) support resilience of critical services? Is appropriate due diligence (BCPs, SLAs, SOC reports) in place and reviewed to ensure resilience requirements can be met by critical third-party services?
+- Do you have response plans that address how to respond to cybersecurity incidents? Do you have processes in place to test your recovery plans?
+- **[+]** Is network segmentation or micro-segmentation implemented to limit the blast radius of a breach or ransomware attack?
+- **[+]** Are redundancy and failover capabilities in place for critical systems and services, including cloud-hosted workloads?
+- **[+]** Are capacity and availability thresholds monitored to provide early warning of potential service disruptions?
 
 ---
 
 ## 📡 DETECT
 
-### Anomalies & Events
+### Continuous Monitoring
 
 - Does the organisation have a SIEM? With a SIEM, you can capture what "normal" (baseline) traffic looks like so you can detect anomalies when something unusual occurs.
-- Does the organisation have an effective process for analysing threats and alerts that are detected?
 - Does the organisation have an effective SIEM solution? If yes, have logs been onboarded successfully?
-- Does the process of analysing detected events include classifying the event based on impact and criticality (e.g., low/medium/high)?
-- Are escalation thresholds for alerts established based on impact and criticality?
-
-### Security Continuous Monitoring
-
-- Is network traffic monitored for malicious activity? (This is accomplished by having an operational SIEM.)
+- Is network traffic monitored for malicious activity?
 - Does security event monitoring include the physical security environment? Do you get alerts for physical security breaches?
 - Do you detect unusual and/or malicious activities across the organisation, including physical breaches?
 - If you perform software development activities, do you conduct secure code scanning? Do you have an anti-malware solution (e.g., Microsoft Defender or CrowdStrike)? What is the coverage — is it deployed on all endpoints, servers, macOS, and Linux machines?
@@ -111,6 +160,18 @@
 - Do you have a comprehensive TPRM process? Do third-party service providers notify you in case of any data breaches (this should be part of the contract)?
 - Can any random device be connected to the network, or do you only allow registered devices configured by your IT team? Do you allow USB flash drives in the environment?
 - Do you conduct regular vulnerability scans? If yes, what is the coverage of your vulnerability scanner?
+- **[+]** Are security logs retained for an adequate period (e.g., 12 months) and protected from tampering or deletion?
+- **[+]** Are privileged user activities logged, audited, and reviewed on a regular basis?
+- **[+]** Is monitoring coverage reviewed and updated when new systems, cloud services, or environments are added?
+
+### Adverse Event Analysis
+
+- Does the organisation have an effective process for analysing threats and alerts that are detected?
+- Does the process of analysing detected events include classifying the event based on impact and criticality (e.g., low/medium/high)?
+- Are escalation thresholds for alerts established based on impact and criticality?
+- **[+]** Are security events correlated across multiple data sources (endpoint, network, cloud, identity) to identify complex or multi-stage attacks?
+- **[+]** Is threat hunting performed proactively to search for undetected threats in the environment?
+- **[+]** Is there a defined threshold or set of criteria that escalates an event to a declared incident?
 
 ### Detection Processes
 
@@ -124,55 +185,70 @@
 
 ## 🚨 RESPOND
 
-### Response Planning
+### Incident Management
 
 - Do you have cybersecurity incident response plans? If yes, are they actively used during an incident?
-
-### Communications
-
 - Do incident response plans include clear contact details and escalation points? Have they been tested?
-- Do cybersecurity incidents get reported as per the defined threshold? How mature is the incident response process?
-- Do incident response plans include clear and transparent escalation points, including involving law enforcement when necessary?
-- For escalated incidents, do response plans include details on how to coordinate with various teams?
-- Does your organisation share information security intelligence with the wider community or industry peers?
+- Are your incident response plans structured in a way that prioritises incidents based on criticality?
+- **[+]** Is the incident response plan tested at least annually through tabletop exercises or live simulations?
+- **[+]** Are there established communication templates for notifying internal and external stakeholders (e.g., customers, regulators, board) during an incident?
+- **[+]** Are third-party IR retainer services (e.g., forensics firm, legal counsel) in place and ready to be activated?
 
-### Analysis
+### Incident Analysis
 
 - Does your team have a clear process to respond to security alerts? Do you have 24/7 coverage?
 - Does your team document the impact and criticality of incidents as part of their analysis?
 - Does your team have the capability (people, skills, and technology) to perform digital forensics analysis when needed?
-- Are your incident response plans structured in a way that prioritises incidents based on criticality?
+- **[+]** Is evidence preserved in a manner that supports potential legal or regulatory proceedings?
+- **[+]** Are indicators of compromise (IoCs) documented and shared with relevant internal teams and external partners after incidents?
+- **[+]** Is root cause analysis (RCA) conducted after significant incidents and shared with leadership?
+
+### Incident Response Reporting & Communication
+
+- Do cybersecurity incidents get reported as per the defined threshold? How mature is the incident response process?
+- Do incident response plans include clear and transparent escalation points, including involving law enforcement when necessary?
+- For escalated incidents, do response plans include details on how to coordinate with various teams?
+- Does your organisation share information security intelligence with the wider community or industry peers?
+- **[+]** Are there documented criteria and timelines for notifying regulators or customers following a data breach or significant incident?
+- **[+]** Is there a public communications or PR plan for handling cybersecurity incidents that may affect your organisation's reputation?
 
 ### Mitigation
 
 - Do incident response plans follow a standard that ensures incidents are contained (such as the SANS IR template)?
 - Do incident response plans follow a standard that ensures incidents are mitigated as needed?
 - Do you have a comprehensive vulnerability management program that accounts for newly discovered vulnerabilities, including zero days? Do you have a process for dealing with them?
+- **[+]** Are temporary containment measures documented and tracked to ensure permanent remediation follows?
 
 ### Improvements
 
 - Do your incident response plans include a "lessons learned" step?
 - Do you periodically test and update your incident response plans?
+- **[+]** Are post-incident reviews (PIRs) conducted after every major incident, and are findings fed back into policy, training, and tooling?
 
 ---
 
 ## 🔄 RECOVER
 
-### Recovery Planning
+### Recovery Plan Execution
 
 - Does your organisation have a disaster recovery plan? Has it been tested?
+- **[+]** Are recovery time objectives (RTOs) and recovery point objectives (RPOs) defined for all critical systems and services?
+- **[+]** Are backups regularly tested to confirm they can be successfully restored within required timeframes?
+- **[+]** Are recovery procedures rehearsed at least annually, including failover to alternate environments or cloud infrastructure?
 
 ### Improvements
 
 - Do your disaster recovery plans include a "lessons learned" step?
 - Do you perform periodic testing for your disaster recovery plans? Do they get regularly updated as a result?
+- **[+]** Are recovery capabilities and identified gaps tracked and funded as part of the cybersecurity improvement roadmap?
+- **[+]** Are lessons learned from recovery activities used to update both the DR plan and the broader incident response process?
 
 ### Communications
 
 - Do you improve communication as part of your disaster recovery testing?
 - Do your disaster recovery plans include mitigating steps in case of a crisis where the organisation's reputation is impacted?
 - Do your disaster recovery plans include clear communication and escalation points?
+- **[+]** Are customers, partners, and regulators notified appropriately when recovery activities affect service availability or data integrity?
+- **[+]** Is there a designated spokesperson or communications lead responsible for external messaging during a recovery event?
 
 ---
-
-*Based on the GRC Mastery NIST Cybersecurity Assessment and NIST Cybersecurity Framework — https://www.nist.gov/cyberframework*
